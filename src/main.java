@@ -74,10 +74,13 @@ public class main extends Application  {
         Text myText5 = new Text(" ");
         Text myText6 = new Text(" ");
         Text myText7 = new Text(" Alan");
+        Text chat2 = new Text(" Duc");
+        Text chat3 = new Text("\n  Mar 6");
         Text myText8 = new Text("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
         Text myText9 = new Text("scene2");
-        Text myText10 = new Text("\n  8hrs ago");
+        Text myText10 = new Text("\n  5:39 pm");
         Text message = new Text(" testtestest");
+        Text message2 = new Text(" testtestest");
         
         final double x1 = 63.5, y1 = 0;
         final double x2 = 0, y2 = 0;
@@ -254,6 +257,10 @@ public class main extends Application  {
         offlineText.setStroke(Color.GRAY);
         Text myText11 = new Text("\n");
         Text myText12 = new Text(" Alan");
+        Text onlineFriend = new Text(" Duc");
+        Text offlineFriend = new Text(" Jeane");
+        Text offlineDate = new Text("       Offline");
+        Text offlineDate2 = new Text("for 1 year");
         Text friendGame = new Text("       Playing");
         Text friendGame2 = new Text("Maplestory");
         Text myText13 = new Text("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
@@ -347,6 +354,7 @@ public class main extends Application  {
         gridpane2.add(polyline29, 2, 8);
         gridpane2.add(polyline30, 3, 8);
         gridpane2.add(imageView10, 0, 9);
+        gridpane2.add(onlineFriend, 1, 9);
         gridpane2.add(polyline17, 0, 10);
         gridpane2.add(polyline18, 1, 10);
         gridpane2.add(polyline25, 2, 10);
@@ -354,6 +362,9 @@ public class main extends Application  {
         gridpane2.add(polyline27, 4, 10);
         gridpane2.add(offlineText, 0, 11);
         gridpane2.add(imageView17, 0, 12);
+        gridpane2.add(offlineFriend, 1, 12);
+        gridpane2.add(offlineDate, 2, 12);
+        gridpane2.add(offlineDate2, 3, 12);
         gridpane2.add(myText13, 0, 13);
         gridpane2.add(button7, 0, 15);
         gridpane2.add(button8, 1, 15);
@@ -387,6 +398,9 @@ public class main extends Application  {
         gridpane.add(polyline21, 3, 8);
         gridpane.add(polyline22, 4, 8);
         gridpane.add(imageView2, 0, 9);
+        gridpane.add(chat2, 1, 9);
+        gridpane.add(message2, 2, 9);
+        gridpane.add(chat3, 4, 9);
         gridpane.add(polyline5, 0, 10);
         gridpane.add(polyline6, 1, 10);
         gridpane.add(polyline11, 2, 10);
