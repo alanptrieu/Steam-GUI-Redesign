@@ -24,7 +24,7 @@ import javafx.stage.Stage;
 public class main extends Application  {
     
     Stage window;
-    Scene scene1, scene2, scene3;
+    Scene scene1, scene2, scene3, scene4;
     
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -109,10 +109,12 @@ public class main extends Application  {
         button1.setOnAction(e -> primaryStage.setScene(scene2));
         Button button2 = new Button("");
         button2.setGraphic(imageView4);
+        button2.setOnAction(e -> primaryStage.setScene(scene1));
         Button button3 = new Button("");
         button3.setGraphic(imageView5);
         Button button4 = new Button("");
         button4.setGraphic(imageView6);
+        button4.setOnAction(e -> primaryStage.setScene(scene4));
         Button button5 = new Button("");
         button5.setGraphic(imageView7);
         button5.setOnAction(e -> primaryStage.setScene(scene3));
@@ -176,7 +178,6 @@ public class main extends Application  {
         imageView31.setFitHeight(60); 
         imageView31.setFitWidth(60);
         
-        
         Button button13 = new Button("");
         button13.setGraphic(imageView19);
         button13.setOnAction(e -> primaryStage.setScene(scene2));
@@ -187,6 +188,7 @@ public class main extends Application  {
         button15.setGraphic(imageView21);
         Button button16 = new Button("");
         button16.setGraphic(imageView22);
+        button16.setOnAction(e -> primaryStage.setScene(scene4));
         Button button17 = new Button("");
         button17.setGraphic(imageView23);
         button17.setOnAction(e -> primaryStage.setScene(scene3));
@@ -212,9 +214,133 @@ public class main extends Application  {
         profileBadges.setFont(new Font("Segoe UI", 22));
         profileBadges.setStroke(Color.BLACK);
         
-        Text myText14 = new Text("\n");
-        Text myText15 = new Text(" ");
-        Text myText16 = new Text(" ");
+        //scene 4
+        GridPane gridpane4 = new GridPane();
+        //gridpane4.setGridLinesVisible(true);
+        scene4 = new Scene(gridpane4, 330, 520);
+        
+        Text storeText = new Text("Store");
+        storeText.setFont(new Font("Segoe UI", 26));
+        storeText.setStroke(Color.BLACK);
+        Text storeSale = new Text("Sale");
+        storeSale.setFont(new Font("Segoe UI", 26));
+        storeSale.setStroke(Color.BLACK);
+        Text storeTrending = new Text("Trend");
+        storeTrending.setFont(new Font("Segoe UI", 26));
+        storeTrending.setStroke(Color.BLACK);
+        Text storeRecommend = new Text("Rec");
+        storeRecommend.setFont(new Font("Segoe UI", 26));
+        storeRecommend.setStroke(Color.BLACK);
+        Text price = new Text("    $4.99");
+        Text price2 = new Text("   $14.99");
+        Text price3 = new Text("      Free");
+        Text price4 = new Text("     $9.99");
+        Text space = new Text("\n\n");
+        
+        Image image32 = new Image(new FileInputStream("notificationicon.png"));
+        ImageView imageView32 = new ImageView(image32); 
+        imageView32.setFitHeight(20); 
+        imageView32.setFitWidth(30);
+        Image image33 = new Image(new FileInputStream("friendicon.png"));
+        ImageView imageView33 = new ImageView(image33);
+        imageView33.setFitHeight(30); 
+        imageView33.setFitWidth(50);
+        Image image34 = new Image(new FileInputStream("chaticon.png"));
+        ImageView imageView34 = new ImageView(image34);
+        imageView34.setFitHeight(30); 
+        imageView34.setFitWidth(50);
+        Image image35 = new Image(new FileInputStream("lockicon.png"));
+        ImageView imageView35 = new ImageView(image35);
+        imageView35.setFitHeight(30); 
+        imageView35.setFitWidth(50);
+        Image image36 = new Image(new FileInputStream("storeicon.png"));
+        ImageView imageView36 = new ImageView(image36);
+        imageView36.setFitHeight(30); 
+        imageView36.setFitWidth(50);
+        Image image37 = new Image(new FileInputStream("profileicon.png"));
+        ImageView imageView37 = new ImageView(image37);
+        imageView37.setFitHeight(30); 
+        imageView37.setFitWidth(50);
+        Image image38 = new Image(new FileInputStream("search.png"));
+        ImageView imageView38 = new ImageView(image38);
+        imageView38.setFitHeight(29); 
+        imageView38.setFitWidth(62);
+        Image image39 = new Image(new FileInputStream("search.png"));
+        ImageView imageView39 = new ImageView(image39);
+        imageView39.setFitHeight(29); 
+        imageView39.setFitWidth(62);
+        Image image40 = new Image(new FileInputStream("search.png"));
+        ImageView imageView40 = new ImageView(image40);
+        imageView40.setFitHeight(29); 
+        imageView40.setFitWidth(62);
+        Image image41 = new Image(new FileInputStream("search.png"));
+        ImageView imageView41 = new ImageView(image41);
+        imageView41.setFitHeight(29); 
+        imageView41.setFitWidth(62);
+        Image image42 = new Image(new FileInputStream("search.png"));
+        ImageView imageView42 = new ImageView(image42);
+        imageView42.setFitHeight(29); 
+        imageView42.setFitWidth(62);
+        Image image43 = new Image(new FileInputStream("test.png"));
+        ImageView imageView43 = new ImageView(image43); 
+        imageView43.setFitHeight(60); 
+        imageView43.setFitWidth(60); 
+        Image image44 = new Image(new FileInputStream("test.png"));
+        ImageView imageView44 = new ImageView(image44); 
+        imageView44.setFitHeight(60); 
+        imageView44.setFitWidth(60); 
+        Image image45 = new Image(new FileInputStream("test.png"));
+        ImageView imageView45 = new ImageView(image45); 
+        imageView45.setFitHeight(60); 
+        imageView45.setFitWidth(60); 
+        Image image46 = new Image(new FileInputStream("test.png"));
+        ImageView imageView46 = new ImageView(image46); 
+        imageView46.setFitHeight(60); 
+        imageView46.setFitWidth(60); 
+        
+        
+        Button button20 = new Button("");
+        button20.setGraphic(imageView33);
+        button20.setOnAction(e -> primaryStage.setScene(scene2));
+        Button button21 = new Button("");
+        button21.setGraphic(imageView34);
+        button21.setOnAction(e -> primaryStage.setScene(scene1));
+        Button button22 = new Button("");
+        button22.setGraphic(imageView35);
+        Button button23 = new Button("");
+        button23.setGraphic(imageView36);
+        button23.setOnAction(e -> primaryStage.setScene(scene4));
+        Button button24 = new Button("");
+        button24.setGraphic(imageView37);
+        button24.setOnAction(e -> primaryStage.setScene(scene3));
+        Button button25 = new Button("");
+        button25.setGraphic(imageView32);
+        
+        gridpane4.add(button25, 4, 0);
+        gridpane4.add(storeText, 0, 1);
+        gridpane4.add(imageView38, 0, 2);
+        gridpane4.add(imageView39, 1, 2);
+        gridpane4.add(imageView40, 2, 2);
+        gridpane4.add(imageView41, 3, 2);
+        gridpane4.add(imageView42, 4, 2);
+        gridpane4.add(storeSale, 0, 3);
+        gridpane4.add(imageView43, 0, 4);
+        gridpane4.add(imageView46, 1, 4);
+        gridpane4.add(price, 0, 5);
+        gridpane4.add(price4, 1, 5);
+        gridpane4.add(storeTrending, 0, 6);
+        gridpane4.add(imageView44, 0 ,7);
+        gridpane4.add(price2, 0, 8);
+        gridpane4.add(storeRecommend, 0, 9);
+        gridpane4.add(price3, 0, 11);
+        gridpane4.add(imageView45, 0, 10);
+        gridpane4.add(space, 0, 12);
+        gridpane4.add(button20, 0 ,13);
+        gridpane4.add(button21, 1 ,13);
+        gridpane4.add(button22, 2 ,13);
+        gridpane4.add(button23, 3 ,13);
+        gridpane4.add(button24, 4 ,13);
+        
         
         //scene 3
         GridPane gridpane3 = new GridPane();
@@ -329,6 +455,7 @@ public class main extends Application  {
         button9.setGraphic(imageView13);
         Button button10 = new Button("");
         button10.setGraphic(imageView14);
+        button10.setOnAction(e -> primaryStage.setScene(scene4));
         Button button11 = new Button("");
         button11.setGraphic(imageView15);
         button11.setOnAction(e -> primaryStage.setScene(scene3));
